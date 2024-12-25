@@ -3,74 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio - AWS & DevOps Specialist</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">MyPortfolio</div>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="intro">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>Aspiring AWS & DevOps Engineer</p>
+        </div>
     </header>
 
-    <section id="home">
-        <div class="intro-text">
-            <h1>Hello, I'm <span>Your Name</span></h1>
-            <p>AWS and DevOps Engineer, passionate about automation and cloud architecture.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
-
-    <section id="about">
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I'm a BE graduate with experience in AWS and DevOps. I love working on scalable cloud infrastructures, CI/CD pipelines, and automating workflows.</p>
+        <p>A short paragraph introducing yourself, your background in BE, and your current skills in AWS and DevOps.</p>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">AWS</div>
-            <div class="skill">DevOps</div>
-            <div class="skill">CI/CD</div>
-            <div class="skill">Terraform</div>
-            <div class="skill">Docker</div>
-            <div class="skill">Kubernetes</div>
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <!-- Example Project -->
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A short description of the project.</p>
+                <a href="#">View Project</a>
+            </div>
+            <!-- Add more project cards as needed -->
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>AWS Deployment Automation</h3>
-                <p>Automated deployment of scalable web applications using AWS services like EC2, S3, RDS, and CloudFormation.</p>
-            </div>
-            <div class="project-card">
-                <h3>CI/CD Pipeline Setup</h3>
-                <p>Designed and implemented Jenkins pipelines for continuous integration and delivery across multiple environments.</p>
-            </div>
-            <div class="project-card">
-                <h3>Infrastructure as Code</h3>
-                <p>Built infrastructure with Terraform, managing state, variables, and cloud resources efficiently.</p>
-            </div>
-        </div>
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <ul>
+            <li>AWS Cloud</li>
+            <li>DevOps (CI/CD, Jenkins, Docker, etc.)</li>
+            <li>Linux System Administration</li>
+            <li>Python, Bash scripting</li>
+        </ul>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out via email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email: [Your Email]</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
