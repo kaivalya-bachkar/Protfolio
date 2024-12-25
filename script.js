@@ -1,2 +1,4 @@
-// You can add interactivity here if needed (animations, form submission handling, etc.)
-console.log('Portfolio website loaded!');
+// Example JS script for interaction (e.g., form validation, animations, etc.)
+document.querySelector('form').addEventListener('submit', function (event) {
+    alert('Form submitted successfully!');
+});
