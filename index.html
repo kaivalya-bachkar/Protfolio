@@ -3,79 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Professional Portfolio Website">
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+        .skills-list, .projects-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li, .projects-list li {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .projects-list li a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .projects-list li a:hover {
+            text-decoration: underline;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        .resume-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .resume-link:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>Your Name</h1>
+        <p>Full Stack Developer | AWS & DevOps Enthusiast</p>
+    </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Your gateway to my skills, experience, and projects.</p>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <div class="about-content">
-            <img src="https://via.placeholder.com/300" alt="My Photo">
-            <p>I am a passionate web developer with expertise in AWS and DevOps, and I specialize in building scalable and efficient applications. With a background in computer engineering and a strong understanding of cloud technologies, I strive to deliver high-quality solutions that meet client needs.</p>
-        </div>
+        <p>Hello! I'm Your Name, a passionate Full Stack Developer with expertise in AWS and DevOps. I love creating scalable and efficient applications and solving complex challenges. My journey in tech began with a Bachelor's degree in Engineering, and I’ve been continuously improving my skills in cloud computing and automation ever since.</p>
     </section>
 
-    <!-- Projects Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Frontend: HTML, CSS, JavaScript, React</li>
+            <li>Backend: Node.js, Express, Python, Django</li>
+            <li>DevOps: AWS, Docker, Kubernetes, Terraform</li>
+            <li>Databases: MySQL, MongoDB, PostgreSQL</li>
+            <li>Soft Skills: Communication, Teamwork, Problem-solving</li>
+        </ul>
+    </section>
+
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-cards">
-            <div class="card">
-                <img src="https://via.placeholder.com/400" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/400" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/400" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Description of project 3.</p>
-            </div>
-        </div>
+        <ul class="projects-list">
+            <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1: Cloud-Based E-commerce</a> - A scalable e-commerce platform hosted on AWS using EC2 and S3.</li>
+            <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2: Portfolio Website</a> - My personal portfolio website built with HTML, CSS, and JavaScript.</li>
+            <li><a href="https://github.com/yourusername/project3" target="_blank">Project 3: Real-time Chat Application</a> - A real-time chat application using Node.js and Socket.io.</li>
+        </ul>
     </section>
 
-    <!-- Contact Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Click below to download my latest resume:</p>
+        <a href="path_to_your_resume.pdf" class="resume-link" download>Download Resume</a>
+    </section>
+
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or inquiries!</p>
-        <form action="submit_form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <p>Feel free to reach out to me for collaborations, projects, or just to chat about technology!</p>
+        <div class="contact-form">
+            <form action="your_form_submission_url" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <p>Connect with me:</p>
+        <p><a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a> | <a href="https://github.com/yourgithub" target="_blank">GitHub</a></p>
     </section>
 
-    <footer>
-        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
