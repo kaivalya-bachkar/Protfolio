@@ -4,10 +4,13 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: #333;
+    background-color: #f4f4f9;
 }
 
 header {
-    background-color: #0066ff;
+    background-image: url('cloud-header-image.jpg'); /* Add your cloud image here */
+    background-size: cover;
+    background-position: center;
     padding: 1rem 0;
     color: white;
     text-align: center;
@@ -30,7 +33,9 @@ header nav ul li a {
 }
 
 #hero {
-    background-color: #004db3;
+    background-image: url('devops-hero-image.jpg'); /* Add your DevOps-related image here */
+    background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -70,7 +75,7 @@ header nav ul li a {
 }
 
 .skill-card, .project-card {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -105,7 +110,7 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #0066ff;
+    background-color: #ff6600;
     color: white;
     padding: 10px;
     font-size: 1rem;
