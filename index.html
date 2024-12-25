@@ -4,94 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio - AWS DevOps Engineer</title>
+    <title>Portfolio - AWS & DevOps Specialist</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="container">
-            <h1>Your Name</h1>
-            <h2>AWS & DevOps Engineer</h2>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I am a passionate AWS & DevOps engineer with a strong foundation in cloud infrastructure, automation, and continuous integration. I specialize in deploying and managing scalable, secure, and high-performance applications on AWS.
-            </p>
+    <section id="home">
+        <div class="intro-text">
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <p>AWS and DevOps Engineer, passionate about automation and cloud architecture.</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills">
-                <ul>
-                    <li>AWS (EC2, S3, RDS, Lambda)</li>
-                    <li>Terraform & CloudFormation</li>
-                    <li>Docker & Kubernetes</li>
-                    <li>CI/CD (Jenkins, GitLab CI)</li>
-                    <li>Linux & Shell Scripting</li>
-                    <li>Ansible & Puppet</li>
-                    <li>Monitoring (CloudWatch, Prometheus, Grafana)</li>
-                </ul>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a BE graduate with experience in AWS and DevOps. I love working on scalable cloud infrastructures, CI/CD pipelines, and automating workflows.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">AWS</div>
+            <div class="skill">DevOps</div>
+            <div class="skill">CI/CD</div>
+            <div class="skill">Terraform</div>
+            <div class="skill">Docker</div>
+            <div class="skill">Kubernetes</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>AWS Deployment Automation</h3>
+                <p>Automated deployment of scalable web applications using AWS services like EC2, S3, RDS, and CloudFormation.</p>
+            </div>
+            <div class="project-card">
+                <h3>CI/CD Pipeline Setup</h3>
+                <p>Designed and implemented Jenkins pipelines for continuous integration and delivery across multiple environments.</p>
+            </div>
+            <div class="project-card">
+                <h3>Infrastructure as Code</h3>
+                <p>Built infrastructure with Terraform, managing state, variables, and cloud resources efficiently.</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1: Automated AWS Infrastructure</h3>
-                <p>Designed and implemented automated infrastructure using Terraform to provision AWS resources like EC2, VPC, and RDS. Integrated with Jenkins for continuous delivery.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2: Kubernetes Cluster on AWS</h3>
-                <p>Set up a Kubernetes cluster using Kops on AWS, automated the deployment pipeline, and monitored the applications using Prometheus and Grafana.</p>
-            </div>
-            <div class="project">
-                <h3>Project 3: CI/CD Pipeline for Microservices</h3>
-                <p>Developed a CI/CD pipeline for containerized microservices using Docker and GitLab CI. Deployed applications on AWS using Elastic Beanstalk.</p>
-            </div>
-        </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
