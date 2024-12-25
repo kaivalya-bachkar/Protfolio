@@ -3,103 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio - AWS DevOps Engineer</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section id="hero">
-        <div class="container">
-            <h2>AWS DevOps Engineer</h2>
-            <p>Building efficient, scalable, and automated cloud infrastructures.</p>
-            <a href="#projects" class="btn">Explore My Work</a>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Your gateway to my skills, experience, and projects.</p>
         </div>
     </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi! I am an AWS DevOps Engineer with a passion for cloud technologies, automation, and problem-solving. I have experience in deploying scalable systems, CI/CD pipelines, and AWS infrastructure. I thrive on learning new technologies and improving efficiency in the DevOps lifecycle.</p>
-            <img src="your-image-path.jpg" alt="My Photo" class="profile-img">
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://via.placeholder.com/300" alt="My Photo">
+            <p>I am a passionate web developer with expertise in AWS and DevOps, and I specialize in building scalable and efficient applications. With a background in computer engineering and a strong understanding of cloud technologies, I strive to deliver high-quality solutions that meet client needs.</p>
         </div>
     </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <img src="aws-image.jpg" alt="AWS">
-                    <h3>AWS</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="devops-image.jpg" alt="DevOps">
-                    <h3>DevOps</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="automation-image.jpg" alt="Automation">
-                    <h3>Automation</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="ci-cd-image.jpg" alt="CI/CD">
-                    <h3>CI/CD Pipelines</h3>
-                </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/400" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Description of project 3.</p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="project1-image.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Project 1 description goes here. Highlighting AWS cloud infrastructure setup, CI/CD integration, etc.</p>
-                </div>
-                <div class="project-card">
-                    <img src="project2-image.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Project 2 description goes here. Focused on automation, DevOps pipelines, or infrastructure management.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out for collaborations or job opportunities.</p>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or inquiries!</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 My Portfolio | Designed by [Your Name]</p>
-        </div>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
